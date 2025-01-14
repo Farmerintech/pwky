@@ -1,8 +1,8 @@
 
 import { useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
-import { MdDashboard } from "react-icons/md";
 import { Link } from "react-router";
 export const NavBar = () => {
   
@@ -43,13 +43,13 @@ export const NavBar = () => {
             <ul className="flex item-center justify-between">
                 <h1 className="text-xl font-bold">PWKY</h1>
                 <button onClick={handleShow}>
-                    <MdDashboard size={25}/>
+                    <AiOutlineMenu size={25}/>
                 </button>
             </ul>
             <ul className={`${show ? '-right-0' : '-right-full '} 
             fixed top-0  z-50 w-full bg-white text-black bottom-0 transition-all ease-in duration-500 `}>
             <button onClick={()=>setShow(false)} className="absolute right-10 top-5 cursor-pointer"><IoClose size={30} /></button>
-                <div className={`${show ? 'flex flex-col gap-5 ml-5 mt-20':'hidden'}`}>
+                <div className={`${show ? 'flex flex-col gap-5 ml-5 mt-4':'hidden'}`}>
                 <Link to="/" className="">Home</Link>
                 <Link to="/">About</Link>
                 <Link to="/">Gallery</Link>
