@@ -15,3 +15,8 @@ h1 {
 body{
   @apply bg-red-100
 }
+.boogaloo-regular {
+  font-family: "Boogaloo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
