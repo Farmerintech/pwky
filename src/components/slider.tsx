@@ -50,7 +50,7 @@ const Slider= ()=>{
       };
     return(
         <div className="">
-        <div className="absolute top-20 md:left-2 md:right-2 -left-8 -right-8">
+        <div className="absolute top-20  -left-8 -right-8">
         <Splide
             className=""
             options={options}
