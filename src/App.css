@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.splide__slide img{
+  width:100%;
+  height:auto;
+}
+.splide__progress__bar{
+  background-color: skyblue;
+  color: skyblue;
+}
+body{
+  overflow:hidden;
+}
