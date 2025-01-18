@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
@@ -8,14 +8,19 @@ export const NavBar = () => {
   
     
     const [show, setShow] = useState<boolean>(false);
-    
     // Correctly define the handleShow function
+    // const navRef= useRef(null)
+
+    // const observer = new IntersectionObserver((e:any), =>{
+    //     e.target.setAttribute('src', "bg-red-600")
+    // })
+    // navRef.observe(observer)
     const handleShow: () => void = () => {
         setShow(!show); // Toggle the `show` state
     };
     return (
         <>
-        <nav className="hidden md:flex items-center justify-between gap-10 bg-white rounded-3xl p-6">
+        <nav className="hidden md:flex items-center justify-between gap-10 bg-white rounded-3xl p-6" >
             <div className="flex items-center gap-5 ">
             <h1 className="bg-white text-lg font-bold text-black rounded-full ">PWKY</h1>
             <ul className="flex items-center gap-5">
@@ -39,7 +44,7 @@ export const NavBar = () => {
             </ul>
         </div>
         </nav>
-        <nav className="md:hidden bg-white p-5">
+        <nav className="absolute top-0 left-0 w-full p-5 md:hidden bg-white">
             <ul className="flex item-center justify-between">
                 <h1 className="text-xl font-bold">PWKY</h1>
                 <button onClick={handleShow}>
@@ -47,7 +52,7 @@ export const NavBar = () => {
                 </button>
             </ul>
             <ul className={`${show ? '-right-0' : '-right-full '} 
-            fixed top-0  z-50 w-full bg-white text-black bottom-0 transition-all ease-in duration-500 `}>
+            fixed top-0  z-50 w-[80%] bg-white text-black bottom-0 transition-all ease-in duration-500 `}>
             <button onClick={()=>setShow(false)} className="absolute right-10 top-5 cursor-pointer"><IoClose size={30} /></button>
                 <div className={`${show ? 'flex flex-col gap-5 ml-5 mt-4':'hidden'}`}>
                 <Link to="/" className="">Home</Link>
