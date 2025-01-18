@@ -1,5 +1,5 @@
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
