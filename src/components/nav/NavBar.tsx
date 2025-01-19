@@ -52,9 +52,9 @@ export const NavBar = () => {
                 </button>
             </ul>
             <ul className={`${show ? '-right-0' : '-right-full '} 
-            fixed top-0  z-50 w-[80%] bg-white text-black bottom-0 transition-all ease-in duration-500 `}>
+            fixed top-0  z-50 w-[90%] bg-gray-200 text-black bottom-0 transition-all ease-in duration-500 `}>
             <button onClick={()=>setShow(false)} className="absolute right-10 top-5 cursor-pointer"><IoClose size={30} /></button>
-                <div className={`${show ? 'flex flex-col gap-5 ml-5 mt-4':'hidden'}`}>
+                <div className={`${show ? 'flex flex-col gap-5 ml-5 mt-10':'hidden'}`}>
                 <Link to="/" className="">Home</Link>
                 <Link to="/">About</Link>
                 <Link to="/">Gallery</Link>
