@@ -17,7 +17,7 @@ export const Services = () =>{
             </div>
             <div className="relative ">
                 <img src={img2} alt={''} 
-                className="w-full md:h-[300px]  rounded-3xl"
+                className="w-full h-[300px]  rounded-3xl"
                 />
                 <div className="absolute flex flex-col justify-center gap-5 pl-4 pr-4 gap-5 pt-8 inset-0 bg-opacity-50 bg-gray-900 rounded-3xl">
                     <h3 className="text-gray-200 font-bold text-xl md:text-2xl">A Day Event full of lasting memories</h3>
@@ -27,7 +27,7 @@ export const Services = () =>{
             </div>
             <div className="relative">
                 <img src={img1} alt={''} 
-                className="w-full md:h-[300px]  rounded-3xl"
+                className="w-full h-[300px]  rounded-3xl"
                 />
              <div className="absolute flex flex-col justify-center pl-4 pr-4  pt-8 inset-0 bg-opacity-50 bg-gray-900 rounded-3xl">
                     <h3 className="text-gray-200 font-bold text-xl md:text-2xl mb-5">Are you a sport Enthusiast or just looking for a great time..?</h3>
