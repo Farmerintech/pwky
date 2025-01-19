@@ -33,24 +33,24 @@ const Slider= ()=>{
         autoplay: true,
         pauseOnHover: false,
         resetProgress: false,
-        height: "25rem",
+        height: "28rem",
         cover: true,
         // width: '200rem'
+        padding:0,
       };
     return(
-        <div className="mt-20">
-        <div className="absolute -left-8 -right-8">
+        <div className="md:mt-20 mt-10 absolute md:relative md:-right-0 md:left-0 -right-8 -left-8">
         <Splide
             className=""
             options={options}
             aria-labelledby="autoplay-example-heading"
             hasTrack={false}
           >
-            <div className="relative">
-            <SplideTrack>
+            <div className="relative ">
+            <SplideTrack className="rounded-3xl">
                 {images.map((item, i) => (
                   <SplideSlide key={i} className="h-full">
-                    <img src={item} alt="" className="w-full object-cover rounded-3xl" />
+                    <img src={item} alt="" className="w-full object-cover " />
                   </SplideSlide>
                 ))}
               </SplideTrack>
@@ -61,7 +61,6 @@ const Slider= ()=>{
             </div>
           </Splide>
         </div>
-       </div>
   
     )
 }
