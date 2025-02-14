@@ -20,35 +20,37 @@ export const NavBar = () => {
     };
     return (
         <>
-        <nav className="hidden md:flex items-center justify-between gap-10 bg-white rounded-3xl p-6" >
+        <nav className="hidden md:flex items-center justify-between gap-10 border bg-black/90 border-green-500 rounded-full p-4" >
             <div className="flex items-center gap-5 ">
-            <h1 className="bg-white text-lg font-bold text-black rounded-full ">PWKY</h1>
-            <ul className="flex items-center gap-5">
-                <Link to="/" className="bg-gray-900 text-white font-bold px-4 py-2 rounded-full">Home</Link>
-                <Link to="/">About</Link>
-                <Link to="/">Gallery</Link>
-                <Link to="/">Contact</Link>
-                <Link to="/">Blog</Link>
-            </ul>
+            <h1 className=" text-2xl font-bold text-green-700">P<span className="text-white">WK</span>Y</h1>
             </div>
         <div className="flex item-center">
-            <ul className="p-2 bg-stone-50 text-black rounded-full flex justify-center items-center w-[130px] gap-3">
+        <ul className="flex items-center gap-5">
+                <Link to="/" className="text-white font-bold">Home</Link>
+                <Link to="/" className="text-white font-bold">About</Link>
+                <Link to="/" className="text-white font-bold">Gallery</Link>
+                <Link to="/" className="text-white font-bold">Contact</Link>
+                <Link to="/" className="text-white font-bold">Blog</Link>
+            </ul>
+            {/* <ul className="p-2 bg-stone-50 text-black rounded-full flex justify-center items-center w-[130px] gap-3">
                <Link to='/'><FiFacebook/></Link>
                <Link to='/'><FiTwitter/></Link>
                <Link to='/'><FiInstagram/></Link>
-            </ul>
-            <ul className="flex items-center gap-10 ">
-                <li className="p-2 bg-white  text-black rounded-full w-[100px]">
-                    <button>Join us</button>
+            </ul> */}
+        </div>
+        <div>
+        <ul className="flex items-center gap-10 ">
+                <li className="px-10 py-3 bg-green-500 text-center text-white rounded-full ">
+                    <button>Sign up</button>
                 </li>
             </ul>
         </div>
         </nav>
-        <nav className="absolute top-0 left-0 w-full p-5 md:hidden bg-white">
+        <nav className="absolute top-0 left-0 w-full p-5 md:hidden bg-black">
             <ul className="flex item-center justify-between">
-                <h1 className="text-xl font-bold">PWKY</h1>
+                <h1 className="text-xl font-bold text-white">P<span className="text-green-500">WK</span>Y</h1>
                 <button onClick={handleShow}>
-                    <AiOutlineMenu size={25}/>
+                    <AiOutlineMenu size={25} color="white"/>
                 </button>
             </ul>
             <ul className={`${show ? '-right-0' : '-right-full '} 
