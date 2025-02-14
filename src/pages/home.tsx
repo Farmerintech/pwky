@@ -1,5 +1,4 @@
-// import { Services } from "../components/services"
-// import Slider from "../components/slider"
+
 
 export const Home = () => {
   // document.body.classList.add()
@@ -12,12 +11,6 @@ export const Home = () => {
           <button className=" text-white px-10 py-3 rounded-full border border-green-500 ">Learn More</button>
 
           </div>
-            {/* <div className="relative h-[75vh] md:h-auto">
-              <Slider/>
-            </div>
-            <div className="mt-10 md:mt-0 md:p-5">
-              <Services/>
-          </div> */}
         </section>
     )
 }
