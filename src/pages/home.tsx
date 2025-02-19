@@ -1,8 +1,9 @@
-import { Hero } from "../components/hero"
+import { AboutUs } from "../components/aboutSection"
+
 export const Home = () => {
     return(
-        <section>
-          <Hero/>
+        <section className="mt-[100vh]">
+          <AboutUs/>
         </section>
     )
 }
