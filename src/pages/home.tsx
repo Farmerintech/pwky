@@ -2,7 +2,7 @@ import { AboutUs } from "../components/aboutSection"
 
 export const Home = () => {
     return(
-        <section className="md:mt-[100vh] mt-[60vh]">
+        <section className="mt-10">
           <AboutUs/>
         </section>
     )
